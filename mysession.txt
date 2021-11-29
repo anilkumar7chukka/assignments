@@ -1,0 +1,97 @@
+Monolithic applications 
+----------------------------
+->If all the functionalities of a project exists in a single codebase, then that application is known as monolithic application.
+  We all must have designed a monolithic application in our lives in which we were given a problem statement and were asked 
+  to design a system with various functionalities. We design our application in various layers like presentation, service 
+  and persistence and then deploy that codebase as single file. This is nothing but a monolithic application where
+  “mono” represents the single codebase containing all the required functionalities.
+
+   Advantages of monolithic applications:  
+------------------------------------------
+
+->Simple to develop relative to microservices where skilled developers are required in order to identify and develop the services.
+-> Easier to deploy as only a single jar/war file is deployed.
+->Relatively easier and simple to develop in comparison to microservices architecture.
+->The problems of network latency and security are relatively less in comparison to microservices architecture. 
+
+Disadvantages of Monolithic applications:
+-------------------------------------------- 
+
+->It becomes too large in size with time and hence, difficult to manage.
+->We need to redeploy the whole application even for a small change.
+->As the size of the application increases, its start-up and deployment time also increases.
+->For any new developer joining the project, it is very difficult to understand the logic of large Monolithic application
+  even if his responsibility is related to a single functionality.
+
+
+
+
+
+Introduction to Microservices
+--------------------------------
+
+->Microservice is a service-based application development methodology.
+In this methodology, big applications will be divided into smallest independent service units.
+Microservice is the process of implementing Service-oriented Architecture by dividing the entire
+application as a collection of interconnected services, where each service will serve only one business need.
+
+Independent − Each microservice should be independently deployable.
+
+Coupling − All microservices should be loosely coupled with one another such that changes in one will not affect the other.
+
+Business Goal − Each service unit of the entire application should be the smallest and capable of delivering one specific 
+business goal.
+
+Example
+---------
+->Let us consider an example of online shopping portal to understand microservice in depth. Now, let us break this entire 
+  E-commerce portal into small business units such as user management, order management, check-in, payment management, 
+  delivery management, etc. One successful order needs to proceed through all of these modules within a specific time frame.
+  Following is the consolidated image of different business units associated with one electronic commerce system.
+
+->Each of these business modules should have its own business logic and stakeholders. They communicate with other third party
+ vendor softwares for some specific needs, and also with each other. For example, order management may communicate with user
+ management to get user information.
+
+
+Advantages & Disadvantages
+----------------------------
+Advantages
+----------------------
+->Small in size − Microservices is an implementation of SOA design pattern. It is recommended to keep your service as much 
+  as you can. Basically, a service should not perform more than one business task, hence it will be obviously small in size
+  and easy to maintain than any other monolithic application.
+
+->Focused − As mentioned earlier, each microservice is designed to deliver only one business task. While designing a 
+  microservice, the architect should be concerned about the focal point of the service, which is its deliverable.
+  By definition, one microservice should be full stack in nature and should be committed to delivering only one business 
+  property.
+
+->Autonomous − Each microservice should be an autonomous business unit of the entire application. Hence, the application
+  becomes more loosely coupled, which helps to reduce the maintenance cost.
+
+->Technology heterogeneity − Microservice supports different technologies to communicate with each other in one business unit, 
+  which helps the developers to use the correct technology at the correct place. By implementing a heterogeneous system, 
+  one can obtain maximum security, speed and a scalable system.
+
+->Ease of deployment − As the entire application is sub-divided into small piece of units, every component should be full 
+  stack in nature. All of them can be deployed in any environment very easily with less time complexity unlike other
+  monolithic applications of the same kind.
+
+Disadvantages
+----------------
+->Distributed system − Due to technical heterogeneity, different technologies will be used to develop different parts of a
+  microservice. A huge set of skilled professionals are required to support this big heterogeneous distributed software.
+  Hence, distributed and heterogeneity stands as a number one disadvantage of using microservice.
+
+->Cost − Microservice is costly, as you have to maintain different server space for different business tasks.
+
+->Enterprise readiness − Microservice architecture can be considered as a conglomerate of different technologies, as technology
+  is evolving day-by-day. Hence, it is quite difficult to make a microservice application enterprise ready to compare to 
+  conventional software development model.
+
+
+
+
+
+
